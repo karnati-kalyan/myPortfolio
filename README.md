@@ -1,6 +1,16 @@
-# Kalyan Karnati | Education Page
+# Kalyan Karnati
 
-This project is a personal webpage detailing the educational background of Kalyan Karnati, featuring responsive design and images representing the educational institutions attended.
+Hello! I'm Kalyan Karnati, a passionate and dedicated software engineer with a strong background in computer science and engineering. I hold a Master's degree in Computer Science from North Carolina State University, where I honed my skills in software engineering, data analysis, and machine learning. My journey in technology began with a Bachelor's degree in Computer Science from CVR College of Engineering, Hyderabad, where I developed a solid foundation in programming, algorithms, and database systems.
+                
+                I am proficient in multiple programming languages and have hands-on experience with a variety of tools and technologies that drive modern software development. Whether it's designing scalable systems, crafting elegant algorithms, or diving deep into data, I am driven by the desire to solve complex problems and create impactful solutions.
+                
+                When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning to stay updated with the ever-evolving tech landscape.
+                
+                Let's connect and explore opportunities to collaborate! You can reach me via email, LinkedIn, or GitHub.
+                
+                
+                
+                Feel free to adjust the wording to better match your style and preferences!
 
 ## Table of Contents
 
@@ -8,13 +18,8 @@ This project is a personal webpage detailing the educational background of Kalya
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [License](#license)
 - [Contact](#contact)
-
-## Overview
-
-The Education Page provides information about Kalyan Karnati's academic achievements, including details about his degrees from North Carolina State University and CVR College of Engineering. The page features logos of both institutions, placed in the top-right corner of each section.
 
 ## Technologies Used
 
@@ -29,27 +34,17 @@ To set up this project locally:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
+    git clone https://github.com/karnati-kalyan/myPortfolio.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd your-repo
+    cd myPortfolio
     ```
-3. Open `education.html` in your preferred web browser.
+3. Open `index.html` in your preferred web browser.
 
 ## Usage
 
 - The webpage includes a navigation bar with links to other sections such as Home, Experience, Projects, and Contact.
-- The Education section highlights the institutions attended and the respective courses taken.
-- Images of the institutions are displayed in the top-right corner of each section for visual representation.
-
-## Screenshots
-
-![North Carolina State University Section](https://1000logos.net/wp-content/uploads/2022/07/North-Carolina-State-University-Logo-history.png)
-*North Carolina State University Section*
-
-![CVR College of Engineering Section](https://i.pinimg.com/236x/cc/9b/be/cc9bbe385309a5ee04fa0a305cbd01cf.jpg)
-*CVR College of Engineering Section*
 
 ## License
 

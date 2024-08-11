@@ -1,7 +1,3 @@
-# Kalyan Karnati
-
-Hello! I'm Kalyan Karnati, a passionate and dedicated software engineer with a strong background in computer science and engineering. I hold a Master's degree in Computer Science from North Carolina State University, where I honed my skills in software engineering, data analysis, and machine learning. My journey in technology began with a Bachelor's degree in Computer Science from CVR College of Engineering, Hyderabad, where I developed a solid foundation in programming, algorithms, and database systems.I am proficient in multiple programming languages and have hands-on experience with a variety of tools and technologies that drive modern software development. Whether it's designing scalable systems, crafting elegant algorithms, or diving deep into data, I am driven by the desire to solve complex problems and create impactful solutions.When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning to stay updated with the ever-evolving tech landscape.Let's connect and explore opportunities to collaborate! You can reach me via email, LinkedIn, or GitHub. Feel free to adjust the wording to better match your style and preferences!
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -10,6 +6,11 @@ Hello! I'm Kalyan Karnati, a passionate and dedicated software engineer with a s
 - [Usage](#usage)
 - [License](#license)
 - [Contact](#contact)
+
+# Overview
+
+Hello! I'm Kalyan Karnati, a passionate and dedicated software engineer with a strong background in computer science and engineering. I hold a Master's degree in Computer Science from North Carolina State University, where I honed my skills in software engineering, data analysis, and machine learning. My journey in technology began with a Bachelor's degree in Computer Science from CVR College of Engineering, Hyderabad, where I developed a solid foundation in programming, algorithms, and database systems.I am proficient in multiple programming languages and have hands-on experience with a variety of tools and technologies that drive modern software development. Whether it's designing scalable systems, crafting elegant algorithms, or diving deep into data, I am driven by the desire to solve complex problems and create impactful solutions.When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning to stay updated with the ever-evolving tech landscape.Let's connect and explore opportunities to collaborate! You can reach me via email, LinkedIn, or GitHub.Feel free to adjust the wording to better match your style and preferences!
+
 
 ## Technologies Used
 

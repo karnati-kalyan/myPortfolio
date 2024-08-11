@@ -1,0 +1,76 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #b71c1c; /* Darker red */
+    color: #ecf0f1;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Experience Styles */
+.experience {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+h5 {
+    background-color: #0f0e0e;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+/* Date and company styles */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-weight: bold;
+    color: #b71c1c; /* Darker red */
+}
+
+.company {
+    color: #333; /* Dark text color for contrast */
+    display: flex;
+    align-items: center;
+}
+.role {
+    font-size: 20px;
+    width: 200px;
+
+}
+
+.company-logo {
+    width: 75px;
+    height: 75px;
+    margin-left: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

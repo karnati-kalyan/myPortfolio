@@ -1,0 +1,31 @@
+.contact-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+.contact-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-card p {
+    color: #777;
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+.contact-card a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}

@@ -1,7 +1,3 @@
-Here's a `README.md` file for your project:
-
----
-
 # Kalyan Karnati | Education Page
 
 This project is a personal webpage detailing the educational background of Kalyan Karnati, featuring responsive design and images representing the educational institutions attended.

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalyan Karnati | About</title>
+    <title id="page-title"></title>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <h1>Kalyan Karnati</h1>
+        <h1 id="name"></h1>
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link text-light" href="./">Home</a></li>
@@ -22,23 +22,52 @@
             </ul>
         </nav>
     </header>
-    <section id="contact">
-        <h2>About Me</h2>
-        <div class="contact-card">
-            <h3>Kalyan Karnati</h3>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:karnatikalyan99@gmail.com">karnatikalyan99@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/kalyan-karnati-44a056189" target="_blank">linkedin.com/kalyan-karnati-44a056189</a></p>
-            <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/karnati-kalyan" target="_blank">github.com/karnati-kalyan</a>, <a href="https://github.com/kalyan-karnati" target="_blank">github.com/kalyan-karnati</a></p>
-            <p><i class="fas fa-phone"></i> Phone: <a href="tel:+19199311609">+1 919-931-1609</a></p>
-            <p><i class="fab fa-hackerrank"></i> HackerRank: <a href="https://www.hackerrank.com/profile/karnatikalyan" target="_blank">hackerrank.com/profile/karnatikalyan</a></p>
-            <p><i class="fab fa-code"></i>CodeChef: <a href="https://www.codechef.com/users/kkcodes" target="_blank">codechef.com/users/kkcodes</a></p>
-            <p><i class="fab fa-code"></i></i> InteviewBit: <a href="https://www.interviewbit.com/profile/kalyan-karnati/" target="_blank">interviewbit.com/profile/kalyan-karnati/</a></p>
-            <p><i class="fab fa-code"></i></i> Leetcode: <a href="https://leetcode.com/u/WWrKUjUGeP/" target="_blank">leetcode.com/u/WWrKUjUGeP/</a></p>
-            
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4" id="about-title"></h2>
+        <div id="contact-card" class="contact-card">
+            <!-- Dynamic content will be injected here -->
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Kalyan Karnati. All rights reserved.</p>
+        <p id="copyright"></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Initialize tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        // Fetch JSON data and populate HTML
+        fetch('https://api.npoint.io/9fe2e6601957235f7f23')
+            .then(response => response.json())
+            .then(data => {
+                // Set page title and name
+                document.getElementById('page-title').textContent = data.title;
+                document.getElementById('name').textContent = data.name;
+                document.getElementById('about-title').textContent = data.aboutTitle;
+
+                // Populate contact card
+                const contactCard = document.getElementById('contact-card');
+                contactCard.innerHTML = `
+                    <h3>${data.name}</h3>
+                    <p><i class="fas fa-envelope" data-toggle="tooltip" data-placement="top" title="Email"></i> Email: <a href="mailto:${data.email}">${data.email}</a></p>
+                    <p><i class="fab fa-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"></i> LinkedIn: <a href="${data.linkedin}" target="_blank">linkedin.com/${data.linkedin.split('/').pop()}</a></p>
+                    <p><i class="fab fa-github" data-toggle="tooltip" data-placement="top" title="GitHub"></i> GitHub: <a href="${data.github}" target="_blank">${data.github.split('/').pop()}</a></p>
+                    <p><i class="fas fa-phone" data-toggle="tooltip" data-placement="top" title="Phone"></i> Phone: <a href="tel:${data.phone}">${data.phone}</a></p>
+                    <p><i class="fab fa-hackerrank" data-toggle="tooltip" data-placement="top" title="HackerRank"></i> HackerRank: <a href="${data.hackerrank}" target="_blank">${data.hackerrank.split('/').pop()}</a></p>
+                    <p><i class="fab fa-code" data-toggle="tooltip" data-placement="top" title="CodeChef"></i> CodeChef: <a href="${data.codechef}" target="_blank">${data.codechef.split('/').pop()}</a></p>
+                    <p><i class="fab fa-code" data-toggle="tooltip" data-placement="top" title="InterviewBit"></i> InterviewBit: <a href="${data.interviewbit}" target="_blank">${data.interviewbit.split('/').pop()}</a></p>
+                    <p><i class="fab fa-code" data-toggle="tooltip" data-placement="top" title="LeetCode"></i> LeetCode: <a href="${data.leetcode}" target="_blank">${data.leetcode.split('/').pop()}</a></p>
+                `;
+
+                // Set footer copyright
+                document.getElementById('copyright').textContent = data.footer.copyright;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
 </body>
 </html>

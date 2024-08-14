@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalyan Karnati | Projects</title>
+    <title id="page-title"></title>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/projects.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <h1>Kalyan Karnati</h1>
+        <h1 id="name"></h1>
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link text-light" href="./">Home</a></li>
@@ -21,56 +21,77 @@
             </ul>
         </nav>
     </header>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3><a href="https://github.com/karnati-kalyan/Car-Rental-Backend" target="_blank">Car Rental Management System</a></h3>
-                <p>Apr 2024</p>
-                <div class="project-content">
-                    <img src="https://static.vecteezy.com/system/resources/previews/000/623/239/original/auto-car-logo-template-vector-icon.jpg" alt="Car Rental System" class="project-image">
-                    <div class="project-details">
-                        <ul>
-                            <li>Developed a robust backend system using Spring Boot framework.</li>
-                            <li>Designed and implemented RESTful APIs using Spring Boot and Spring Data JPA.</li>
-                            <li>Integrated Spring Security for secure user authentication and authorization.</li>
-                        </ul>
-                        <div class="stack">
-                            <h4>Stack:</h4>
-                            <div class="stack-images">
-                                <img src="https://miro.medium.com/v2/resize:fit:642/1*aay8IzJhX2AYSuIVPvv3uA.png" alt="Spring Boot" class="stack-image">
-                                <img src="https://www.javacodegeeks.com/wp-content/uploads/2014/07/spring-security-project.png" alt="Spring Security" class="stack-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/kalyan-karnati/covid-tracker" target="_blank">COVID Tracker</a></h3>
-                <p>Dec 2022</p>
-                <div class="project-content">
-                    <img src="https://www.fordharrison.com/webfiles/Images/COVID19%20red%20logo.png" alt="COVID Tracker" class="project-image">
-                    <div class="project-details">
-                        <ul>
-                            <li>Developed an Angular-based web application frontend to track global and Indian state-wise COVID-19 cases.</li>
-                            <li>Implemented dynamic data fetching using Angular's HTTP client.</li>
-                            <li>Created a responsive UI design with Angular's templating and data binding capabilities.</li>
-                        </ul>
-                        <div class="stack">
-                            <h4>Stack:</h4>
-                            <div class="stack-images">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular" class="stack-image">
-                                
-                                <img src="https://malcoded.com/static/4275a5989fff01567be1199c6a847740/f3583/Angular-Http.png" alt="HTTP Client" class="stack-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="projects" class="container my-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div id="projects-list" class="projects-container"></div>
     </section>
     <footer>
-        <p>&copy; 2024 Kalyan Karnati. All rights reserved.</p>
+        <p id="copyright"></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Initialize tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        // Fetch JSON data and populate HTML
+        fetch('./yourProfile/projects.json')
+            .then(response => response.json())
+            .then(data => {
+                // Set page title and name
+                document.getElementById('page-title').textContent = data.title;
+                document.getElementById('name').textContent = data.name;
+
+                // Populate projects section
+                const projectsList = document.getElementById('projects-list');
+                data.projects.forEach(project => {
+                    const projectItem = document.createElement('div');
+                    projectItem.className = 'project mb-4';
+                    projectItem.innerHTML = `
+                        <h3><a href="${project.url}" target="_blank">${project.title}</a></h3>
+                        <p>${project.date}</p>
+                        <div class="project-content">
+                            <img 
+                                src="${project.image.src}" 
+                                alt="${project.image.alt}" 
+                                class="project-image"
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                title="${project.image.alt}"
+                            >
+                            <div class="project-details">
+                                <ul>
+                                    ${project.details.map(detail => `<li>${detail}</li>`).join('')}
+                                </ul>
+                                <div class="stack">
+                                    <h4>Stack:</h4>
+                                    <div class="stack-images">
+                                        ${project.stack.map(tech => `
+                                            <img 
+                                                src="${tech.src}" 
+                                                alt="${tech.alt}" 
+                                                class="stack-image"
+                                                data-toggle="tooltip" 
+                                                data-placement="top" 
+                                                title="${tech.alt}"
+                                            >
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    projectsList.appendChild(projectItem);
+                });
+
+                // Set footer copyright
+                document.getElementById('copyright').textContent = data.footer.copyright;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
 </body>
 </html>

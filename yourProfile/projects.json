@@ -1,0 +1,57 @@
+{
+    "title": "Kalyan Karnati | Projects",
+    "name": "Kalyan Karnati",
+    "projects": [
+        {
+            "title": "Car Rental Management System",
+            "url": "https://github.com/karnati-kalyan/Car-Rental-Backend",
+            "date": "Apr 2024",
+            "image": {
+                "src": "https://static.vecteezy.com/system/resources/previews/000/623/239/original/auto-car-logo-template-vector-icon.jpg",
+                "alt": "Car Rental System"
+            },
+            "details": [
+                "Developed a robust backend system using Spring Boot framework.",
+                "Designed and implemented RESTful APIs using Spring Boot and Spring Data JPA.",
+                "Integrated Spring Security for secure user authentication and authorization."
+            ],
+            "stack": [
+                {
+                    "src": "https://miro.medium.com/v2/resize:fit:642/1*aay8IzJhX2AYSuIVPvv3uA.png",
+                    "alt": "Spring Boot"
+                },
+                {
+                    "src": "https://www.javacodegeeks.com/wp-content/uploads/2014/07/spring-security-project.png",
+                    "alt": "Spring Security"
+                }
+            ]
+        },
+        {
+            "title": "COVID Tracker",
+            "url": "https://github.com/kalyan-karnati/covid-tracker",
+            "date": "Dec 2022",
+            "image": {
+                "src": "https://www.fordharrison.com/webfiles/Images/COVID19%20red%20logo.png",
+                "alt": "COVID Tracker"
+            },
+            "details": [
+                "Developed an Angular-based web application frontend to track global and Indian state-wise COVID-19 cases.",
+                "Implemented dynamic data fetching using Angular's HTTP client.",
+                "Created a responsive UI design with Angular's templating and data binding capabilities."
+            ],
+            "stack": [
+                {
+                    "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg",
+                    "alt": "Angular"
+                },
+                {
+                    "src": "https://malcoded.com/static/4275a5989fff01567be1199c6a847740/f3583/Angular-Http.png",
+                    "alt": "HTTP Client"
+                }
+            ]
+        }
+    ],
+    "footer": {
+        "copyright": "© 2024 Kalyan Karnati. All rights reserved."
+    }
+}

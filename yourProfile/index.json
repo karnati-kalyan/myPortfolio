@@ -1,0 +1,20 @@
+{
+    "title": "Kalyan Karnati | Home",
+    "profilePhoto": {
+        "src": "https://media.licdn.com/dms/image/D5603AQEUIo6ZiehzWQ/profile-displayphoto-shrink_200_200/0/1715205410464?e=2147483647&v=beta&t=T_P8nDtxxXwuZ-uns3LD_F9Xch7W85ZK9ghKHILrhXs",
+        "alt": "Kalyan Karnati"
+    },
+    "name": "Kalyan Karnati",
+    "intro": "Hello! I'm Kalyan Karnati, a passionate and dedicated software engineer with a strong background in computer science and engineering. I hold a Master's degree in Computer Science from North Carolina State University, where I honed my skills in software engineering, data analysis, and machine learning. My journey in technology began with a Bachelor's degree in Computer Science from CVR College of Engineering, Hyderabad, where I developed a solid foundation in programming, algorithms, and database systems. I am proficient in multiple programming languages and have hands-on experience with a variety of tools and technologies that drive modern software development. Whether it's designing scalable systems, crafting elegant algorithms, or diving deep into data, I am driven by the desire to solve complex problems and create impactful solutions. When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously learning to stay updated with the ever-evolving tech landscape. Let's connect and explore opportunities to collaborate! You can reach me via email, LinkedIn, or GitHub.",
+   
+    "contact": {
+        "email": "karnatikalyan99@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/kalyan-karnati-44a056189",
+        "github1": "https://github.com/karnati-kalyan",
+        "github2": "https://github.com/kalyan-karnati",
+        "phone": "+1 919-931-1609"
+    },
+    "footer": {
+        "copyright": "2024 Kalyan Karnati. All rights reserved."
+    }
+}

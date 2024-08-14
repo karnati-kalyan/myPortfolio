@@ -1,0 +1,90 @@
+{
+    "title": "Kalyan Karnati | Experience",
+    "name": "Kalyan Karnati",
+    "experience": [
+        {
+            "role": "Full Stack Developer II",
+            "date": "June 2024 – Present",
+            "companyLogo": {
+                "src": "https://1000logos.net/wp-content/uploads/2021/04/Fedex-logo.png",
+                "alt": "FedEx Logo"
+            },
+            "responsibilities": [
+                "Designed, coded, tested, and deployed software for client-server and web applications using Angular, Spring Framework, SQL, and other technologies.",
+                "Collaborated with product owners to understand requirements and provide feedback.",
+                "Developed system requirements and program specifications, wrote and tested code.",
+                "Created and executed system and integration tests."
+            ]
+        },
+        {
+            "role": "Information Technology Intern (Full Stack)",
+            "date": "June 2023 – May 2024",
+            "companyLogo": {
+                "src": "https://1000logos.net/wp-content/uploads/2021/04/Fedex-logo.png",
+                "alt": "FedEx Logo"
+            },
+            "responsibilities": [
+                "Developed responsive front-end applications using Angular 12 and Angular Material design.",
+                "Engineered RESTful APIs with Spring Boot in Java.",
+                "Implemented comprehensive unit testing strategies with Karma and JUnit.",
+                "Delivered over 50 story points and maintained 80% code coverage in both frontend and backend systems."
+            ]
+        },
+        {
+            "role": "Associate Software Engineer (DevOps)",
+            "date": "Oct 2021 – August 2022",
+            "companyLogo": {
+                "src": "https://pbs.twimg.com/profile_images/1810309639046606848/PT9magcD_400x400.jpg",
+                "alt": "OpenText Logo"
+            },
+            "responsibilities": [
+                "Led the migration of CI/CD processes to Git, achieving 100% automation and reducing deployment times by 50%.",
+                "Automated over 90 security scans and deployments using Kubernetes, resulting in a 70% reduction in security vulnerabilities.",
+                "Managed regular updates and maintenance of cloud environments on Google Cloud Platform, AWS, and Cloud Foundry, ensuring 99.9% uptime and seamless service continuity.",
+                "Engineered Git CI/CD pipelines for scheduled runs of 75% test cases, streamlining development workflows and increasing deployment frequency by 60%.",
+                "Developed a health status portal for 70% of deployed services, enhancing monitoring and alerting capabilities, and reducing downtime by 40%.",
+                "Integrated an automated tests pipeline with the development pipeline to ensure new features are deployed only after successful automated test runs."
+            ]
+        },
+        {
+            "role": "Associate Quality Assurance Engineer",
+            "date": "Mar 2021 – Oct 2021",
+            "companyLogo": {
+                "src": "https://pbs.twimg.com/profile_images/1810309639046606848/PT9magcD_400x400.jpg",
+                "alt": "OpenText Logo"
+            },
+            "responsibilities": [
+                "Increased testing efficiency by 30% through the implementation of automated test scripts using Selenium, reducing manual testing time and accelerating the release cycle.",
+                "Identified and reported 50+ critical defects per project, resulting in a 20% reduction in post-release issues and improved product stability.",
+                "Achieved 95% test coverage for major applications by developing and executing comprehensive test plans and cases."
+            ]
+        },
+        {
+            "role": "Engineering Intern",
+            "date": "Jan 2021 – Feb 2021",
+            "companyLogo": {
+                "src": "https://pbs.twimg.com/profile_images/1810309639046606848/PT9magcD_400x400.jpg",
+                "alt": "OpenText Logo"
+            },
+            "responsibilities": [
+                "Acquired proficiency in writing test cases and understanding the CI/CD process, contributing to a 30% improvement in testing efficiency.",
+                "Analyzed and developed system requirements, program specifications, and designs for large-scale projects."
+            ]
+        },
+        {
+            "role": "Front End Engineer Intern",
+            "date": "Apr 2020 – Jul 2020",
+            "companyLogo": {
+                "src": "https://www.finsmes.com/wp-content/uploads/2020/09/virtusa.jpg",
+                "alt": "Virtusa Logo"
+            },
+            "responsibilities": [
+                "Specialized in creating reusable Angular components, adhering to industry best practices and Angular style guides, resulting in a 50% reduction in development time.",
+                "Recognized as the \"Best Intern of the Team\" for outstanding contributions to front-end development projects."
+            ]
+        }
+    ],
+    "footer": {
+        "copyright": "2024 Kalyan Karnati. All rights reserved."
+    }
+}

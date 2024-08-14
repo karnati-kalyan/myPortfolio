@@ -1,0 +1,49 @@
+{
+    "title": "Kalyan Karnati | Education",
+    "name": "Kalyan Karnati",
+    "education": [
+        {
+            "institution": "North Carolina State University, Raleigh, NC",
+            "logo": {
+                "src": "https://brand.ncsu.edu/assets/logos/ncstate-type-2x2-red-max.png",
+                "alt": "NCSU Logo"
+            },
+            "degree": "Master of Computer Science",
+            "graduationDate": "May 2024",
+            "gpa": "3.92/4.0",
+            "courses": [
+                "CSC 510 Software Engineering",
+                "CSC 505 Design and Analysis of Algorithms",
+                "CSC 522 Automated Learning and Data Analysis",
+                "CSC 517 Object Oriented Designs and Development",
+                "CSC 591 Neural Networks and Deep Learning",
+                "CSC 540 Database and Management Systems",
+                "CSC 554 Human Computer Interaction",
+                "CSC 573 Internet Protocols",
+                "CSC 533 Privacy in the Digital Age"
+            ]
+        },
+        {
+            "institution": "CVR College of Engineering, Hyderabad, India",
+            "logo": {
+                "src": "https://upload.wikimedia.org/wikipedia/en/4/4c/Cvrh.ibp.jpg",
+                "alt": "CVR College Logo"
+            },
+            "degree": "Bachelor of Science in Computer Science",
+            "graduationDate": "June 2021",
+            "gpa": "9.59/10.0",
+            "courses": [
+                "Design and Analysis of Algorithms",
+                "Software Engineering",
+                "Database Systems",
+                "Data Structures",
+                "Web Technologies",
+                "Object Oriented Programming",
+                "Web Services and Cloud Computing"
+            ]
+        }
+    ],
+    "footer": {
+        "copyright": "© 2024 Kalyan Karnati. All rights reserved."
+    }
+}

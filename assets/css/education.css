@@ -1,4 +1,4 @@
-/* General Styles */
+@import url(https://fonts.googleapis.com/css?family=Lora);
 
 header h1 {
     margin: 0;
@@ -82,4 +82,8 @@ footer {
     right: 0;
     width: 150px;
     height: 100px;
+}
+
+.courses{
+    font-family: 'Lora';;
 }

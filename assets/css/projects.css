@@ -1,4 +1,4 @@
-/* Projects Page Styles */
+@import url(https://fonts.googleapis.com/css?family=Lora);
 #projects {
     padding: 2rem;
 }
@@ -48,6 +48,7 @@
 
 .project-details {
     flex: 1;
+    font-family: 'Lora';
 }
 
 .stack {
